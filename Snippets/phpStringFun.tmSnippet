@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:phpstringfun function="ucfirst" par1="??"}{segment_1}{/exp:phpstringfun}</string>
+	<key>name</key>
+	<string>phpStringFun</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>fun</string>
+	<key>uuid</key>
+	<string>7EB21B68-3F98-464D-A03D-9D9E9CFD59E1</string>
+</dict>
+</plist>

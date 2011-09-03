@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:trunchtml chars="${1:300}" inline="${2:...}"${3: ending="${4:&lt;a href='{path=site/comments\}'&gt;read on&lt;/a&gt;}"}}
+	${5:$TM_SELECTED_TEXT}
+{/exp:trunchtml}
+$0</string>
+	<key>keyEquivalent</key>
+	<string>^@p</string>
+	<key>name</key>
+	<string>exp:trunchtml</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>exp</string>
+	<key>uuid</key>
+	<string>C47EE7C8-46CE-4FE0-B801-3329FEB41590</string>
+</dict>
+</plist>

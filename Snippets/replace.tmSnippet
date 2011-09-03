@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:replace find="a|e|i|o|u" replace="X" multiple="yes"}text you want processed{/exp:replace}</string>
+	<key>name</key>
+	<string>replace</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>replace</string>
+	<key>uuid</key>
+	<string>451B6CE8-B913-43B0-9A49-7346461033E0</string>
+</dict>
+</plist>

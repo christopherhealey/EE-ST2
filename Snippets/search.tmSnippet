@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>search:body="=pickles|shoes"</string>
+	<key>name</key>
+	<string>search</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>search</string>
+	<key>uuid</key>
+	<string>FB0370E2-E355-4BD1-86AE-DEEC5BD8A198</string>
+</dict>
+</plist>

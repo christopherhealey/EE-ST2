@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:sl_combinator:combine_js}{/exp:sl_combinator:combine_js}
+{exp:sl_combinator:combine_css}{/exp:sl_combinator:combine_css}</string>
+	<key>name</key>
+	<string>combinator</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>combine</string>
+	<key>uuid</key>
+	<string>D26D963D-9B78-44CC-BFC0-1A3F472D2FBD</string>
+</dict>
+</plist>

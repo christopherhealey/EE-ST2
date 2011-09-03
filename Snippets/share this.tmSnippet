@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:share_this url="{title_permalink=news}" title="{title}" entry_id="{entry_id}" orientation="top" exclude="digg,furl,netscape,newsvine,blinklist,reddit,blogmarks,magnolia,live,tailrank,mister wong"}
+{exp:email:tell_a_friend charset="utf-8" allow_html='n'}
+&lt;label for="from"&gt;Your email:&lt;/label&gt;
+&lt;input type="text" id="from" name="from" size="40" maxlength="35" value="{member_email}"&gt;&lt;br&gt;
+&lt;label for="name"&gt;Your name:&lt;/label&gt;
+&lt;input type="text" id="name" name="name" size="40" maxlength="35" value="{member_name}"&gt;&lt;br&gt;
+&lt;label for="to"&gt;To:&lt;/label&gt;
+&lt;input type="text" id="to" name="to" size="40" maxlength="35"&gt;&lt;br&gt;
+&lt;label for="subject"&gt;Subject:&lt;/label&gt;
+&lt;input type="text" id="subject" name="subject" size="40" value="Entry by: {author}"&gt;&lt;br&gt;
+&lt;label for="message"&gt;Message:&lt;/label&gt;
+&lt;textarea id="message" name="message" readonly="readonly" rows="10" cols="40"&gt;
+{body}
+{permalink}
+&lt;/textarea&gt;
+&lt;button type="submit"&gt;Send&lt;/button&gt;
+{/exp:email:tell_a_friend}
+{/exp:share_this}</string>
+	<key>name</key>
+	<string>share this</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>share</string>
+	<key>uuid</key>
+	<string>C4D8573F-56D8-462D-9D14-8136059E1B2E</string>
+</dict>
+</plist>

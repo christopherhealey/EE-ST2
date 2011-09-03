@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:nsm_transplant:body}
+	${0:$TM_SELECTED_TEXT}
+{/exp:nsm_transplant:body}</string>
+	<key>keyEquivalent</key>
+	<string>^@p</string>
+	<key>name</key>
+	<string>exp:nsm_transplant:body</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>transplant</string>
+	<key>uuid</key>
+	<string>5D1C97F6-8FB3-4BDF-A0D7-AD8319BE976E</string>
+</dict>
+</plist>

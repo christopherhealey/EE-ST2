@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:php_functions functions="strip_tags|trim|strtolower|nl2br"}
+&lt;h1&gt;Expressing MY &lt;span&gt;Engine&lt;/span&gt;&lt;/h1&gt;
+&lt;p&gt;VRROOOOM&lt;/p&gt;
+{/exp:php_functions}
+</string>
+	<key>name</key>
+	<string>php functions</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>functions</string>
+	<key>uuid</key>
+	<string>DAB885E7-A77D-47FA-BC03-14FA930D27E1</string>
+</dict>
+</plist>

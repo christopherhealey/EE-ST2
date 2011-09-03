@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:navee:custom nav_title="${1:nav_title}"${2: start_node="$4"}${5: id="$6"}${7: class="$8"} first_class="first" last_class="last" selected_class="active"${9:${10: ignore_include_in_nav|list_type|max_depth|no_children|no_selected|selected_class_on_parents|start_nav_from_parent|start_nav_from_parent_depth|wrap_type}="$11"}}
+	&lt;li class="{class}${12: class-{level\}}"${13: id="{id\}"}${14: class="{class\}"}&gt;&lt;a href="{link}"${15: rel="{rel\}"}${16: target="{target\}"}&gt;{text}&lt;/a&gt;{kids}&lt;/li&gt;
+{/exp:navee:custom}
+$0</string>
+	<key>name</key>
+	<string>exp:navee:custom</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>navee</string>
+	<key>uuid</key>
+	<string>DD12AE8C-258C-4252-85BA-8102408FDA87</string>
+</dict>
+</plist>

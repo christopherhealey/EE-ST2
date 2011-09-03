@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>content</key>
+		<string>{exp:channel:entries channel="${1:weblog1}" disable="categories|member_data|pagination|trackbacks" ${3:parameters}}
+$0
+{/exp:channel:entries}</string>
+	</dict>
+	<key>deleted</key>
+	<array/>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>1B01FC50-3ABF-4362-AF32-BB7F53940F56</string>
+</dict>
+</plist>

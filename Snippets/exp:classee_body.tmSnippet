@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:classee_body${1: attr="false"}}</string>
+	<key>name</key>
+	<string>exp:classee_body</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>classee</string>
+	<key>uuid</key>
+	<string>5E5EBDD9-F649-494E-9306-D3FBD261FEAE</string>
+</dict>
+</plist>

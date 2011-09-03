@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:cartthrob:add_to_cart_form entry_id="{entry_id}" return="cart/index"}
+	&lt;button type="submit"&gt;Add to cart&lt;/button&gt;
+{/exp:cartthrob:add_to_cart_form}</string>
+	<key>name</key>
+	<string>untitled</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>cart</string>
+	<key>uuid</key>
+	<string>3440AE8B-572D-4F78-88F2-5668D9CC5F61</string>
+</dict>
+</plist>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>         {exp:search:simple_form weblog="about|act|events|find-out|join|members|news|ride|site|you" no_result_page="site/no-results"
+      result_page="site/results" search_in="everywhere" id="search" where="all"}
+           &lt;div&gt;
+             &lt;label class="offset" for="site-search"&gt;Search the site&lt;/label&gt;
+             &lt;input type="text" id="site-search" name="keywords"&gt;
+             &lt;button type="submit"&gt;&lt;img src="{site_url}images/button_go_off.png" alt="Go" width="31" height="23"&gt;&lt;/button&gt;
+           &lt;/div&gt;
+         {/exp:search:simple_form}</string>
+	<key>name</key>
+	<string>simple search</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>simple</string>
+	<key>uuid</key>
+	<string>EF12CAB7-1AEF-4FEB-9BFE-357E5F086429</string>
+</dict>
+</plist>

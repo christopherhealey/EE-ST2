@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>content</key>
+		<string>{exp:mailinglist:form list="${1:default}"}
+	&lt;div&gt;
+         &lt;p&gt;Enter your email address to join our mailing list and receive regular updates&lt;/p&gt;
+          &lt;label for="email" class="offset"&gt;Email&lt;/label&gt;
+           &lt;input type="text" name="email" id="email" value="{email}"&gt;
+           &lt;input class="btn" name="submit" type="image" src="/images/go-btn2-off.png" alt="GO!"&gt;
+     &lt;/div&gt;
+{/exp:mailinglist:form}</string>
+	</dict>
+	<key>deleted</key>
+	<array/>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>40D52A01-9705-4BBC-89F4-B8C50B4A4B5F</string>
+</dict>
+</plist>

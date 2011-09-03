@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:structure:sitemap${1: css_id="$2"}${3: css_class="$4"}${5: exclude_status="${6:hidden}"}${7: mode="${8:html|xml|text}"}}$0</string>
+	<key>name</key>
+	<string>exp:structure:sitemap</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>structure</string>
+	<key>uuid</key>
+	<string>F49D9388-5FFE-475E-9D5F-34346273805E</string>
+</dict>
+</plist>

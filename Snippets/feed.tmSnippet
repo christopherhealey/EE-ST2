@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{assign_variable:section="news-media"}
+{exp:rss:feed weblog="{section}"}
+&lt;?xml version="1.0" encoding="{encoding}"?&gt;
+&lt;rss version="2.0" 
+xmlns:dc="http://purl.org/dc/elements/1.1/" 
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" 
+xmlns:admin="http://webns.net/mvcb/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+xmlns:atom="http://www.w3.org/2005/Atom"&gt;
+&lt;channel&gt;
+&lt;title&gt;{exp:xml_encode}{site_name} {section}{/exp:xml_encode}&lt;/title&gt;
+&lt;link&gt;{site_url}{exp:xml_encode}?utm_source=Teasers&amp;utm_medium=RSS&amp;utm_content=BlogName&amp;utm_campaign=blog{/exp:xml_encode}&lt;/link&gt;
+&lt;description&gt;{section} and updates from {site_name}&lt;/description&gt;
+&lt;dc:language&gt;en&lt;/dc:language&gt;
+&lt;dc:rights&gt;Copyright {gmt_date format="%Y"}&lt;/dc:rights&gt;
+&lt;dc:date&gt;{gmt_date format="%Y-%m-%dT%H:%i:%s%Q"}&lt;/dc:date&gt;
+&lt;admin:generatorAgent rdf:resource="http://expressionengine.com/" /&gt;
+&lt;atom:link href="{site_url}/{section}/feed/" rel="self" type="application/rss+xml" /&gt;
+{exp:weblog:entries weblog="{section}" limit="10" rdf="off" dynamic_start="on" disable="member_data|trackbacks|pagination"}
+&lt;item&gt;
+&lt;title&gt;{exp:xml_encode}{title}{/exp:xml_encode}&lt;/title&gt;
+&lt;dc:creator&gt;{author}&lt;/dc:creator&gt;
+&lt;link&gt;{title_permalink={section}}{exp:xml_encode}?utm_source=Teasers&amp;utm_medium=RSS&amp;utm_content=ArticleTitle&amp;utm_campaign={url_title}{/exp:xml_encode}&lt;/link&gt;
+&lt;guid&gt;{title_permalink={section}}{exp:xml_encode}#When:{gmt_entry_date format="%H:%i:%sZ"}?utm_source=Teasers&amp;utm_medium=RSS&amp;utm_content=ArticleTitle&amp;utm_campaign={url_title}{/exp:xml_encode}&lt;/guid&gt;
+&lt;description&gt;
+&lt;![CDATA[
+&lt;p&gt;{exp:char_limit total="100"}{exp:ee_typography formatting="none"}{body}{/exp:ee_typography}{/exp:char_limit}&lt;/p&gt;
+{if remaining}&lt;p&gt;&lt;a href="{title_permalink={section}/latest-news}{exp:xml_encode}?utm_source=Teasers&amp;utm_medium=RSS&amp;utm_content=ContinueReading&amp;utm_campaign={url_title}{/exp:xml_encode}"&gt;Continue reading&lt;/a&gt;&lt;/p&gt;{/if}
+&lt;hr /&gt;
+]]&gt;
+&lt;/description&gt;
+&lt;dc:subject&gt;{site_name} {section}&lt;/dc:subject&gt;
+&lt;dc:date&gt;{gmt_entry_date format="%Y-%m-%dT%H:%i:%s%Q"}&lt;/dc:date&gt;
+&lt;/item&gt;
+{/exp:weblog:entries}
+&lt;/channel&gt;
+&lt;/rss&gt;
+{/exp:rss:feed}</string>
+	<key>name</key>
+	<string>feed</string>
+	<key>uuid</key>
+	<string>666CC574-4D8B-414A-9D55-3DF99327F503</string>
+</dict>
+</plist>

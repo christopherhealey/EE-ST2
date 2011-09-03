@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:smartdown${1: encode_ee_tags="yes"}}${2:$TM_SELECTED_TEXT}{/exp:smartdown}$0</string>
+	<key>keyEquivalent</key>
+	<string>^@p</string>
+	<key>name</key>
+	<string>exp:smartdown</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>exp</string>
+	<key>uuid</key>
+	<string>88769FBD-CBE6-4545-A378-76C0944073C8</string>
+</dict>
+</plist>

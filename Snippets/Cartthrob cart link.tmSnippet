@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{if {exp:cartthrob:total_items_count} &gt; 0}&lt;p&gt;({exp:cartthrob:total_items_count}) item{if {exp:cartthrob:total_items_count} &gt; 1}s{/if} in your {exp:cartthrob:cart_items_info}{if no_results}&lt;a href="{path=cart}"&gt;{/if}{if first_row}&lt;a href="{path=cart/checkout}"&gt;{/if}{/exp:cartthrob:cart_items_info}Cart&lt;/a&gt;&lt;/p&gt;
+{/if}</string>
+	<key>name</key>
+	<string>Cartthrob cart link</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>cart</string>
+	<key>uuid</key>
+	<string>6A6E53FA-E7DF-488C-A215-496B443AB520</string>
+</dict>
+</plist>

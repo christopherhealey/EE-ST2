@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{segment_n_category_id}
+{segment_n_category_name}
+{segment_n_category_description}
+{segment_n_category_image}
+{segment_n_category_parent_id}
+{segment_n_category_group_id}
+</string>
+	<key>name</key>
+	<string>seg2cat</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>seg2cat</string>
+	<key>uuid</key>
+	<string>10C78A4B-4A6E-419B-B49D-E9E39801C9F2</string>
+</dict>
+</plist>

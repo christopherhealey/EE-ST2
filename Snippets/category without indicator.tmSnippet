@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:query sql="SELECT cat_id, cat_name FROM exp_categories WHERE cat_url_title = '{segment_2}'"}
+&lt;h2&gt;{cat_name}&lt;/h2&gt;
+{exp:weblog:entries weblog="your_weblog" category="{cat_id}"}
+...
+{/exp:weblog:entries}
+{/exp:query}</string>
+	<key>name</key>
+	<string>category without indicator</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>indicator</string>
+	<key>uuid</key>
+	<string>8A80FF20-45A2-4A1D-B13D-E00E04AA40F8</string>
+</dict>
+</plist>

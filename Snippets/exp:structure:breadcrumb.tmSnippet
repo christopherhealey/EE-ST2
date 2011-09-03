@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;ul id="${1:breadcrumbs}"&gt;{exp:structure:breadcrumb wrap_each="li" here_as_title="yes" separator=""${2: inc_home="no"}${3: inc_here="no"}}&lt;/ul&gt; &lt;!-- #$1 --&gt;$0</string>
+	<key>name</key>
+	<string>exp:structure:breadcrumb</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>structure</string>
+	<key>uuid</key>
+	<string>C34C1D7B-82D3-4516-BBB3-E24259972D17</string>
+</dict>
+</plist>

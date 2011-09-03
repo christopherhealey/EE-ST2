@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:weblog:entry_form weblog="default_site" return="site/index" preview="site/entry" enctype="multi"}
+
+					{preview}
+					&lt;h1&gt;{title}&lt;/h1&gt;
+					{display_custom_fields}
+					{/preview}
+
+					&lt;div&gt;
+						&lt;label for="title"&gt;Title&lt;/label&gt;
+						&lt;input type="text" name="title" id="title" value="{title}" maxlength="100" onkeyup="liveUrlTitle();"&gt;&lt;br&gt;
+						&lt;label for="url_title"&gt;URL Title&lt;/label&gt;
+						&lt;input type="text" name="url_title" id="url_title" value="{url_title}" maxlength="75" size="50"&gt;&lt;br&gt;
+						
+						&lt;label for="image"&gt;Image:&lt;/label&gt;
+						&lt;input type="file" id="image" name="field_id=54"&gt;
+						&lt;input type="hidden" name="field_id=54[file_name]"&gt;
+						&lt;input type="hidden" name="field_id=54[existing]"&gt;
+
+						{custom_fields}
+						&lt;label for="{field_name}"&gt;{field_label}{if required}&lt;img src="/images/asterisk.png" width="8" height="7" alt="Required"&gt; {/if}&lt;span&gt;{field_instructions}&lt;/span&gt;&lt;/label&gt;
+						{if textarea}
+						&lt;textarea id="{field_name}" name="{field_name}" cols="50" rows="{rows}" onclick="setFieldName(this.name)"&gt;{field_data}&lt;/textarea&gt;&lt;br&gt;
+						{/if}
+
+						{if textinput}
+						&lt;input type="text" dir="{text_direction}" id="{field_name}" name="{field_name}" value="{field_data}" maxlength="{maxlength}" onclick="setFieldName(this.name)"&gt;&lt;br&gt;
+						{/if}
+
+						{if pulldown}
+						&lt;select id="{field_name}" name="{field_name}"&gt;
+						{options}&lt;option value="{option_value}"{selected}&gt;{option_name}&lt;/option&gt;{/options}
+						&lt;/select&gt;&lt;br&gt;
+						{/if}
+
+						{if date}
+						&lt;input type="text" id="{field_name}" name="{field_name}" value="{field_data}" maxlength="{maxlength}" onclick="setFieldName(this.name)"&gt;&lt;br&gt;
+						{/if}
+
+						{if relationship}
+						&lt;select id="{field_name}" name="{field_name}"&gt;
+						{options}&lt;option value="{option_value}"{selected}&gt;{option_name}&lt;/option&gt;{/options}
+						&lt;/select&gt;&lt;br&gt;
+						{/if}
+						{/custom_fields} 
+
+						{status_menu}
+						&lt;label for="status"&gt;Status&lt;/label&gt;
+						&lt;select name="status" id="status"&gt;
+						{select_options}
+						&lt;/select&gt;&lt;br&gt;
+						{/status_menu}
+
+						&lt;label for="entry_date"&gt;Date&lt;/label&gt;
+						&lt;input type="text" name="entry_date" id="entry_date" value="{entry_date}" maxlength="23"&gt;&lt;br&gt;
+
+						&lt;label for="expiration_date"&gt;Expiration Date&lt;/label&gt;
+						&lt;input type="text" name="expiration_date" id="expiration_date" value="{expiration_date}" maxlength="23"&gt;&lt;br&gt;
+
+						&lt;!-- &lt;label for=""&gt;Comment Expiration Date&lt;/label&gt;
+						&lt;input type="text" name="comment_expiration_date" value="{comment_expiration_date}" maxlength="23"&gt;&lt;br&gt; 
+
+						&lt;input type="checkbox" name="sticky" id="sticky" value="y" {sticky}&gt; &lt;label for=""&gt;Make Entry Sticky&lt;/label&gt;
+						&lt;input type="checkbox" name="allow_comments" id="allow_comments" value="y" {allow_comments}&gt; &lt;label for="allow_comments"&gt;Allow Comments&lt;/label&gt;
+						&lt;input type="checkbox" name="dst_enabled" id="dst_enabled" value="y" {dst_enabled}&gt;&lt;label for="dst_enabled"&gt;DST Active on Date of Entry&lt;/label&gt;--&gt;
+
+						{category_menu}
+						&lt;label for="category"&gt;Categories&lt;/label&gt;
+						&lt;select name="category[]" id="category" size="4" multiple="multiple"&gt;
+						{select_options}
+						&lt;/select&gt;&lt;br&gt;
+						{/category_menu}
+
+						&lt;input type="submit" name="submit" value="Submit"&gt;
+						&lt;input type="submit" name="preview" value="Preview"&gt;
+					&lt;/div&gt;
+
+					{/exp:weblog:entry_form}</string>
+	<key>name</key>
+	<string>SAEF</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>saef</string>
+	<key>uuid</key>
+	<string>A03D6257-1DD8-40B2-B119-C024D7E0372D</string>
+</dict>
+</plist>

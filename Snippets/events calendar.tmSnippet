@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;ul class="nav"&gt;
+	{exp:weblog:entries weblog="events|pennants" category="not 22" show_future_entries="yes" status="open|processing" orderby="entry_date|event_date" sort="asc" disable="member_date|pagination|trackbacks"}
+	{date_heading display="yearly"}&lt;li&gt;
+		&lt;h2&gt;{entry_date format="%Y"}&lt;/h2&gt;
+		&lt;ul&gt;
+		{/date_heading}
+			{date_heading display="monthly"}&lt;li&gt;
+				&lt;h3&gt;{entry_date format="%F"}&lt;/h3&gt;
+				&lt;ul&gt;
+				{/date_heading}
+                        &lt;li itemscope itemtype="http://microformats.org/profile/hcalendar#vevent"&gt;&lt;time itemprop="dtstart" datetime="{entry_date format="%Y-%m-%dT%H:%j:%s+10:00"}"&gt;{entry_date format="%d"}&lt;/time&gt; &lt;a itemprop="url" href="{path=individual-events/event-detail/{entry_id}}"&gt;&lt;span itemprop="summary"&gt;{title}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+				{date_footer display="monthly"}&lt;/ul&gt;
+			&lt;/li&gt;
+			{/date_footer}
+		{date_footer display="yearly"}&lt;/ul&gt;
+	&lt;/li&gt;
+	{/date_footer}
+	{/exp:weblog:entries}
+&lt;/ul&gt;
+</string>
+	<key>name</key>
+	<string>events calendar</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>events</string>
+	<key>uuid</key>
+	<string>1ED75608-83ED-4081-835A-D6385D5C69C7</string>
+</dict>
+</plist>

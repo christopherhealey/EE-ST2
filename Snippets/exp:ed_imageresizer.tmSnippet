@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:ed_imageresizer image="${1:{image\}}" alt="${2:{title\}}"${3: maxWidth="$4" maxHeight="$5"}${6: class="$7"}${8:${9: default|cropratio|forceWidth|forceHeight|id|title|href_only|debug}="${10:value}"}}$0</string>
+	<key>name</key>
+	<string>exp:ed_imageresizer</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>img</string>
+	<key>uuid</key>
+	<string>5954BEDF-40CA-4CE2-9258-3E98DB8A40CE</string>
+</dict>
+</plist>

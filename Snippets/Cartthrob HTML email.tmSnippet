@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{preload_replace:headline="ORDER INFORMATION"}
+ {if "ORDER_ID" != ""}
+ {exp:channel:entries 
+  channel="orders" 
+  show_future_entries="yes" 
+  dynamic="no" 
+  entry_id="ORDER_ID"  
+  status="not closed" 
+  limit="1"}
+  &lt;table width="600" cellpadding="5" cellspacing="0"&gt;
+   &lt;tr&gt;
+    &lt;td valign="top" align="left" style="font-size:12px;color:#000000;font-family:arial, sans-serif;"&gt;&lt;br&gt;
+     &lt;p&gt; &lt;span style="font-size:16px;font-weight:bold;"&gt;{headline}&lt;/span&gt; &lt;/p&gt;
+     &lt;table cellspacing="0" cellpadding="2" bgcolor="#000000" width="100%"&gt;
+      &lt;tr&gt;
+       &lt;td&gt;&lt;span style="color:#ffffff;font-size:14px;"&gt;Order Data&lt;/span&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/table&gt;
+     &lt;table cellspacing="0" cellpadding="2" width="100%"&gt;
+      &lt;tr&gt;
+       &lt;td valign="top"&gt;
+        &lt;span style="font-size:12px;font-weight:bold;"&gt;Order Date: &lt;/span&gt; 
+        &lt;span style="font-size:12px;"&gt;{entry_date format="%M %D %Y"}&lt;/span&gt;
+       &lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/table&gt;
+     &lt;table cellspacing="0" cellpadding="0" width="100%"&gt;
+      &lt;tr&gt;
+       &lt;td valign="top"&gt;
+        &lt;span style="font-size:12px; font-weight:bold;"&gt;Order ID: &lt;/span&gt; 
+        &lt;span style="font-size:12px;"&gt;{title}&lt;/span&gt;
+       &lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/table&gt;
+     &lt;hr&gt;
+     &lt;table cellspacing="0" cellpadding="0" width="100%"&gt;
+      &lt;tr&gt;
+       &lt;td width="250" valign="top"&gt;
+        &lt;span style="font-size:14px; font-weight:bold; "&gt;Billing&lt;/span&gt;&lt;br&gt;
+        &lt;span style="font-size:12px; "&gt;   
+         {order_billing_first_name} {order_billing_last_name}&lt;br&gt;
+         {order_billing_address}&lt;br&gt;
+         {if order_billing_address2}{order_billing_address2}&lt;br&gt;{/if}
+         {order_billing_city}, {order_billing_state} {order_billing_zip}&lt;br&gt;
+         {if order_country_code}{order_country_code}&lt;br&gt;{/if}
+         {order_customer_email}&lt;br&gt;
+         {order_customer_phone}
+        &lt;/span&gt;
+       &lt;/td&gt;
+       &lt;td valign="top"&gt;
+        &lt;span style="font-size:14px; font-weight:bold;"&gt;Shipping&lt;/span&gt;&lt;br&gt;
+        &lt;span style="font-size:12px; "&gt;   
+         {if order_shipping_address}
+          {order_shipping_first_name} {order_shipping_last_name}&lt;br&gt;
+          {order_shipping_address}&lt;br&gt;
+          {if order_shipping_address2}{order_shipping_address2}&lt;br&gt;{/if}
+          {order_shipping_city}, {order_shipping_state} {order_shipping_zip}
+          {if order_shipping_country_code}{order_shipping_country_code}{/if}
+         {if:else}
+          {order_billing_first_name} {order_billing_last_name}&lt;br&gt;
+          {order_billing_address}&lt;br&gt;
+          {if order_billing_address2}{order_billing_address2}&lt;br&gt;{/if}
+          {order_billing_city}, {order_billing_state} {order_billing_zip}&lt;br&gt;
+          {if order_country_code}{order_country_code}&lt;br&gt;{/if}
+          {order_customer_email}&lt;br&gt;
+          {order_customer_phone}
+         {/if}
+        &lt;/span&gt;
+       &lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/table&gt;
+     &lt;hr&gt;
+
+     Total number of purchased items: {order_items:total_results}.
+     &lt;table cellspacing="0" cellpadding="2" width="100%"&gt;
+      &lt;thead&gt;
+       &lt;tr&gt;
+        &lt;td&gt;&lt;span style="font-size:12px;font-weight:bold;"&gt;ID&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span style="font-size:12px;font-weight:bold;"&gt;Description&lt;/span&gt;&lt;/td&gt;
+        &lt;td align="right"&gt;&lt;span style="font-size:12px;font-weight:bold;"&gt;Price&lt;/span&gt;&lt;/td&gt;
+        &lt;td align="center"&gt;&lt;/td&gt;
+        &lt;td align="right"&gt;&lt;span style="font-size:12px;font-weight:bold;"&gt;Qty&lt;/span&gt;&lt;/td&gt;
+        &lt;td align="right"&gt;&lt;span style="font-size:12px;font-weight:bold;"&gt;Item Total&lt;/span&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+       {order_items}
+        &lt;tr class="{item:switch="odd|even"}" valign="top"&gt;
+         &lt;td&gt;&lt;span style="font-size:12px;"&gt;{item:entry_id}&lt;/span&gt;&lt;/td&gt;
+         &lt;td&gt;&lt;span style="font-size:12px;"&gt;{item:title}&lt;br&gt;{item:option_value}&lt;/span&gt;&lt;/td&gt;
+         &lt;td align="right"&gt;&lt;span style="font-size:12px;"&gt;{item:quantity}&lt;/span&gt;&lt;/td&gt;
+         &lt;td align="center"&gt;&lt;/td&gt;
+         &lt;td align="right"&gt;&lt;span style="font-size:12px;"&gt;{item:price}&lt;/span&gt;&lt;/td&gt;
+         &lt;td align="right"&gt;
+          &lt;span style="font-size:12px;"&gt;
+          {exp:cartthrob:arithmetic num1="{item:price}" num2="{item:quantity}" operator="*"}
+          &lt;/span&gt;
+         &lt;/td&gt;
+        &lt;/tr&gt;
+       {/order_items}
+       &lt;tr&gt;
+        &lt;td&gt;&lt;span style="font-size:12px;"&gt;&lt;/span&gt;&lt;/td&gt;
+        &lt;td colspan="3"&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span style="font-size:12px;"&gt;&lt;/span&gt;&lt;/td&gt;
+        &lt;td&gt;&lt;span style="font-size:12px;"&gt;&lt;/span&gt;&lt;/td&gt;
+       &lt;/tr&gt;
+      &lt;/tbody&gt;
+     &lt;/table&gt;
+     &lt;hr&gt;
+     &lt;table cellspacing="0" cellpadding="0" width="100%"&gt;
+      &lt;tr&gt;
+       &lt;td align="right"&gt;
+        &lt;table cellspacing="0" cellpadding="2"&gt;
+         &lt;tr&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:12px;"&gt;Shipping:&lt;/span&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:12px;"&gt;{order_shipping}&lt;/span&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:12px;"&gt;Tax:&lt;/span&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:12px;"&gt;{order_tax}&lt;/span&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+          &lt;td valign="top" align="right"&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:12px;"&gt;&lt;/span&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:14px;font-weight:bold;"&gt;Total:&lt;/span&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;/td&gt;
+          &lt;td valign="top" align="right"&gt;&lt;span style="font-size:14px;font-weight:bold;"&gt;{order_total}&lt;/span&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/table&gt;
+       &lt;/td&gt;
+      &lt;/tr&gt;
+     &lt;/table&gt;
+    &lt;/td&gt;
+   &lt;/tr&gt;
+  &lt;/table&gt;
+ {/exp:channel:entries}
+{/if}</string>
+	<key>name</key>
+	<string>Cartthrob HTML email</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>orders</string>
+	<key>uuid</key>
+	<string>07AFA000-F981-4ABD-A36C-17A71927F8DB</string>
+</dict>
+</plist>

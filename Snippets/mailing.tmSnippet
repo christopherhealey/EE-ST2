@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:mailinglist:form list="default"}
+	&lt;div&gt;
+		&lt;label for="email" class="offset"&gt;Email&lt;/label&gt;&lt;input type="email" id="email" name="email" value="" placeholder="Email"&gt;&lt;br&gt;
+		&lt;button type="submit"&gt;Subscribe&lt;/button&gt;
+	&lt;/div&gt;
+{/exp:mailinglist:form}
+</string>
+	<key>name</key>
+	<string>mailing</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>mailing</string>
+	<key>uuid</key>
+	<string>56470824-C92D-4933-A94D-5D8A668A1E7A</string>
+</dict>
+</plist>

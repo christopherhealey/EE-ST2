@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;p class="published"&gt;&lt;span class="value-title" title="{entry_date format="%Y-%m-%dT%H:%i:%s%O"}"&gt;{entry_date format="%d %F %Y"}&lt;/span&gt;&lt;/p&gt;</string>
+	<key>name</key>
+	<string>hatom</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>hatom</string>
+	<key>uuid</key>
+	<string>32D857EC-B60C-45D4-871F-6132D1A2FD7C</string>
+</dict>
+</plist>

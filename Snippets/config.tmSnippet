@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>if ( ! defined('EXT')){
+exit('Invalid file request');
+}
+
+$conf['app_version'] = "167";
+$conf['license_number'] = "";
+$conf['debug'] = "1";
+$conf['install_lock'] = "0";
+$conf['db_hostname'] = "localhost";
+$conf['db_username'] = "xxxxxxx_admin";
+$conf['db_password'] = "xxxxxxxx";
+$conf['db_name'] = "xxxxxxx_ee";
+$conf['db_type'] = "mysql";
+$conf['db_prefix'] = "exp";
+$conf['db_conntype'] = "0";
+$conf['system_folder'] = "cms";
+$conf['cp_url'] = "http://www.xxxxxxx.com.au/cms/";
+$conf['doc_url'] = "http://expressionengine.com/docs/";
+$conf['cookie_prefix'] = "";
+$conf['is_system_on'] = "y";
+$conf['allow_extensions'] = "y";
+$conf['multiple_sites_enabled'] = "n";
+//$conf['protect_javascript'] = 'n';
+
+// Paths and URLs
+$conf['site_url'] = "http://${_SERVER['HTTP_HOST']}/";
+ 
+$conf['tmpl_file_basepath'] = "${_SERVER['DOCUMENT_ROOT']}/templates/";
+$conf['theme_folder_path']  = "${_SERVER['DOCUMENT_ROOT']}/themes/";
+$conf['theme_folder_url']   = "http://${_SERVER['HTTP_HOST']}/themes";
+ 
+$conf['captcha_path'] = "${_SERVER['DOCUMENT_ROOT']}/images/captchas";
+$conf['captcha_url']  = "http://${_SERVER['HTTP_HOST']}/images/captchas";
+ 
+$conf['avatar_path']  = "${_SERVER['DOCUMENT_ROOT']}/images/members/avatars";
+$conf['avatar_url']   = "http://${_SERVER['HTTP_HOST']}/images/members/avatars";
+ 
+$conf['photo_path']   = "${_SERVER['DOCUMENT_ROOT']}/images/members/photos";
+$conf['photo_url']    = "http://${_SERVER['HTTP_HOST']}/images/members/photos";
+$conf['ft_path'] = "${_SERVER['DOCUMENT_ROOT']}/${conf['system_folder']}/extensions/fieldtypes/";
+$conf['ft_url'] = "http://${_SERVER['HTTP_HOST']}/${conf['system_folder']}/extensions/fieldtypes/";
+?&gt;
+</string>
+	<key>name</key>
+	<string>config</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>config</string>
+	<key>uuid</key>
+	<string>2E618D91-9A5B-43E7-B671-A66E5F5F23D7</string>
+</dict>
+</plist>

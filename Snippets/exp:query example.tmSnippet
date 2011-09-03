@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:query sql="SELECT ct.title, cd.field_id_22 as link
+	FROM exp_channel_titles ct
+	JOIN exp_channel_data cd ON cd.entry_id = ct.entry_id
+	WHERE cd.channel_id = 9
+	AND ct.status = 'open'
+	AND ct.site_id = 1
+	LIMIT 10;"
+}</string>
+	<key>name</key>
+	<string>exp:query example</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>query</string>
+	<key>uuid</key>
+	<string>2B51AE81-66B1-414C-BDE5-6431B73CE61D</string>
+</dict>
+</plist>

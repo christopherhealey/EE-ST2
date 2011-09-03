@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>changed</key>
+	<dict>
+		<key>content</key>
+		<string>{exp:member:login_form return="${1:{segment_1\}/{segment_2\}}" name="${2:login_form}"}
+
+&lt;label for="username"&gt;Username&lt;/label&gt;
+&lt;input type="text" name="username" id="username" value="&gt;&lt;br&gt;
+
+&lt;label for="password"&gt;Password&lt;/label&gt;
+&lt;input type="password" name="password" id="password" value=""&gt;&lt;br&gt;
+
+{if auto_login}
+&lt;input type="checkbox" name="auto_login" id="auto_login" value="1"&gt; &lt;label for="auto_login"&gt;Auto-login on future visits&lt;/label&gt;&lt;br&gt;
+{/if}
+
+&lt;input type="checkbox" name="anon" id="anon" value="1" checked="checked"&gt; &lt;label for="anon"&gt;Show my name in the online users list&lt;/label&gt;&lt;br&gt;
+
+&lt;button type="submit"&gt;Submit&lt;/button&gt;
+
+&lt;p&gt;&lt;a href="{path=member/forgot_password}"&gt;Forgot your password?&lt;/a&gt;&lt;/p&gt;
+
+{/exp:member:login_form}</string>
+	</dict>
+	<key>deleted</key>
+	<array/>
+	<key>isDelta</key>
+	<true/>
+	<key>uuid</key>
+	<string>1EDE50D8-66A6-4D22-8010-224115040182</string>
+</dict>
+</plist>

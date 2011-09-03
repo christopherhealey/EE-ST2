@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{if segment_1==""} class="active"{/if}</string>
+	<key>name</key>
+	<string>active link</string>
+	<key>scope</key>
+	<string>text.html, text.xhtml</string>
+	<key>tabTrigger</key>
+	<string>active</string>
+	<key>uuid</key>
+	<string>EDD3EDD9-91B1-44A6-A8F8-A90F63FC3908</string>
+</dict>
+</plist>

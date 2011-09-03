@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:weblog:entries weblog="orders" entry_id="ORDER_ID" disable="categories|member_data|pagination|trackbacks" show_future_entries="yes" dynamic="off" status="open|failed|declined|processing"}
+
+Hi {billing_first_name} {billing_last_name}, 
+
+The following transaction was processed / placed on the {site_name} site.
+
+CUSTOMER INFORMATION:
+-----------------------------------------------
+    
+Name:       {billing_first_name} {billing_last_name}
+Address:    {billing_address}{if billing_address2} {billing_address2}{/if}, {billing_city}, {billing_state}, {billing_zip}
+Country:    {billing_country}
+Telephone:  {customer_phone}
+Email:      {customer_email}
+
+
+TRANSACTION DETAIL
+-----------------------------------------------
+
+Date &amp; time:     {entry_date format="%m/%d/%Y"}
+Transaction ID:  {order_transaction_id}
+Total:           {order_total}
+
+{order_items}
+Title:  {item:title}
+Qty:    {item:quantity}
+{/order_items}
+{/exp:weblog:entries}</string>
+	<key>name</key>
+	<string>Cartthrob plain text email</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>orders</string>
+	<key>uuid</key>
+	<string>401C58E6-3499-4BD9-B5B1-17A9DF911F17</string>
+</dict>
+</plist>

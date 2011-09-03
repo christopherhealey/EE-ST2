@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{exp:navee:custom_crumbs${1: nav_title="${2:nav_title}"}${3: id="$4"}${5: class="$6"}${7: last_item="$8"}${9: last_item_link="$10"}${11:${12: ignore_include_in_nav|list_type|no_last_anchor|no_last_spacer|spacer|wrap_type}="$13"}}
+	&lt;li${14: class="{class\}"}${15: id="{id\}"}&gt;&lt;a href="{link}"${16: rel="{rel\}"}${17: target="{target\}"}&gt;{text}&lt;/a&gt;&lt;/li&gt;
+{/exp:navee:custom_crumbs}
+$0</string>
+	<key>name</key>
+	<string>exp:navee:custom_crumbs</string>
+	<key>scope</key>
+	<string>text.html.ee</string>
+	<key>tabTrigger</key>
+	<string>navee</string>
+	<key>uuid</key>
+	<string>A10BF107-B77A-4FA5-9877-B20B121A0990</string>
+</dict>
+</plist>
