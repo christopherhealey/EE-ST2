@@ -7,7 +7,7 @@
 	&lt;button type="submit"&gt;Add to cart&lt;/button&gt;
 {/exp:cartthrob:add_to_cart_form}</string>
 	<key>name</key>
-	<string>untitled</string>
+	<string>Cartthrob add to cart button</string>
 	<key>scope</key>
 	<string>text.html</string>
 	<key>tabTrigger</key>
